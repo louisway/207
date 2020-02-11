@@ -16,7 +16,7 @@
 #include	<time.h>		/* timespec{} for pselect() */
 #include	<netinet/in.h>	/* sockaddr_in{} and other Internet defns */
 #include	<arpa/inet.h>	/* inet(3) functions */
-#include	<netinet/sctp.h> /* note if sctp does not exist we blow up :> */
+//#include	<netinet/sctp.h> /* note if sctp does not exist we blow up :> */
 #include	<errno.h>
 #include	<fcntl.h>		/* for nonblocking */
 #include	<netdb.h>

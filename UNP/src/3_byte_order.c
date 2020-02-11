@@ -1,4 +1,11 @@
-#include  "unp.h"
+//#include  "unp.h"
+#include "config.h"
+#include <stdio.h>
+
+/**
+  For some headers are not compatiable in MAC OS, so I commented out unp.h.
+  Only config.h and stdio.h are necessary for this program
+**/
 
 int main(int argc, char **argv){
   union {
@@ -14,10 +21,9 @@ int main(int argc, char **argv){
         printf("little-endian\n");
     }else{
         printf("unknown\n");
-    } else{
+    } 
+  } else{
         printf("sizeof(short) = %\n", sizeof(short)); 
     } 
    
-    exit(0);
-  } 
 }
