@@ -1,0 +1,13 @@
+1. autoreconf --verbose --install --force
+  :generate config.h.in from configure.ac
+
+2. ./configure
+  :generate config.h
+
+3. Appending macros in configure.ac
+  AC_DEFINE_UNQUOTED(CPU_VENDOR_OS, "$host", [CPU, vendor, and operating system])
+
+  HAVE_ADDRINFO_STRUCT:AC_CHECK_TYPE(struct addrinfo,
+   AC_DEFINE(HAVE_ADDRINFO_STRUCT, 1, Define to 1 if <netdb.h> defines struct addrinfo),,[
+   #include <netdb.h>])  
+  
