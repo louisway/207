@@ -1,0 +1,13 @@
+1.How to compile?
+  cd UNP/build
+  cmake ..
+  make
+  Then the executable file will be under UNP/build/src
+
+2. How to add more source codes?
+  put your source code under src
+  modify the CMakeLists.txt, instructions will be self-included.
+  if you need more header files, put them under include
+  Then, it's done
+
+ 
