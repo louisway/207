@@ -16,6 +16,7 @@
 
 /* pid_t fork exec */
 #include <unistd.h>
+#include <errno.h>
 
 /* sockaddr_in */
 #include <netinet/in.h>
@@ -27,5 +28,9 @@
 #define SERV_PORT_STR "9877"
 #define LISTENQ 1024 /* maximum number of client connection */
 #define SA struct sockaddr
+#define MAXLINE 10000
+
+void str_echo(int sockfd);
+void err_sys(const char* input);
 
 #endif
