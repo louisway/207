@@ -10,7 +10,8 @@
 #include <arpa/inet.h>
 
 #include <sys/types.h>
-
+#include <sys/select.h>
+#include <poll.h>
 /*Socket()*/
 #include <sys/socket.h>
 
@@ -32,5 +33,5 @@
 
 void str_echo(int sockfd);
 void err_sys(const char* input);
-
+void str_cli(FILE *fp, int sockfd);
 #endif

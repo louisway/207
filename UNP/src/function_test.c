@@ -8,6 +8,9 @@
 #include <sys/socket.h>
 
 /* verified */
+#include <sys/select.h>
+
+/* verified */
 #include <unistd.h>
 
 /* verified */
