@@ -1,0 +1,7 @@
+how to compile?
+cd build
+cmake ..
+make
+./client_1
+
+you are welcome to change the ip and port number in the code
