@@ -24,6 +24,8 @@
 /* bzero */
 #include <strings.h>
 
+
+#define CACHE_PORT 11211
 #define SERV_PORT  9877
 #define SERV_PORT_STR "9877"
 #define LISTENQ 1024 /* maximum number of client connection */
